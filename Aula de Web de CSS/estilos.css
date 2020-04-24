@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  
+  }
+  h1{
+  color:#6666CC;
+  }
+  h2{
+    color: #9999FF;
+  }
+  h3{
+    color:#6666CC;
+  }
+  .igual{
+    font-family:verdana;
+    font-size: 10px;
+    color:#808080;
+    font-weight: bold;
+  }
+  .diferente{
+    color:#FF0000;
+      font-weight: bold;
+      text-decoration: underline;
+  }
+  span{
+      font-weight: bold;
+  }
+  .terceiro{
+     font-style: italic;
+  }
