@@ -42,11 +42,19 @@ livrostotal[2] = Livros3
 
 livrostotal[3] = Livros4
 
-for (i = 0; livrostotal.length; i++) {
-    console.log(livrostotal[i].titulo, livrostotal[i].autor)
-    if (livrostotal[i].livroLido == true) {
-        console.log("Livro Lido com sucesso")
-    } else {
-        console.log("Livro nao Lido com sucesso")
-    }
-}
+// for (i = 0; livrostotal.length; i++) {
+//     console.log(livrostotal[i].titulo, livrostotal[i].autor)
+//     if (livrostotal[i].livroLido == true) {
+//         console.log("Livro Lido com sucesso")
+//     } else {
+//         console.log("Livro nao Lido com sucesso")
+//     }
+// }
+
+
+var teste = fetch('https://api.github.com/users/KrunalLathiya')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.error(error))
