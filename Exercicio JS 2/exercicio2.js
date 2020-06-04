@@ -42,19 +42,38 @@ livrostotal[2] = Livros3
 
 livrostotal[3] = Livros4
 
-// for (i = 0; livrostotal.length; i++) {
-//     console.log(livrostotal[i].titulo, livrostotal[i].autor)
-//     if (livrostotal[i].livroLido == true) {
-//         console.log("Livro Lido com sucesso")
-//     } else {
-//         console.log("Livro nao Lido com sucesso")
-//     }
-// }
-
 
 var teste = fetch('https://api.github.com/users/KrunalLathiya')
     .then(response => response.json())
     .then(data => {
         console.log(data)
+    })
+    .catch(error => console.error(error))
+
+
+
+
+var teste2 = fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.error(error))
+
+
+var teste3 = fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        console.log("   <img src=" + data.message + " alt='Random Photo of a Dog' />")
+    })
+    .catch(error => console.error(error))
+
+var teste4 = fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(data => {
+        var imagem = document.createElement("img");
+        imagem.src = data.message;
+        document.body.appendChild(imagem);
+
     })
     .catch(error => console.error(error))
